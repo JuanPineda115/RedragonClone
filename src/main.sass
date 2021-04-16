@@ -3,28 +3,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap')
 
 body
-    background: #141414
-    transition: margin-left .5s
-    width: calc(100vw)
+    margin: 0px
+    display: flex
+    background: #252525
     font-family: Roboto condensed
     font-size: 15px
-    line-height: 25px
     overflow-y: scroll
     overflow-x: hidden
 
-.Nav
-    background: #141414
+#root
+    width: calc(100vw)
+    line-height: 25px
+
+//sidebar
+.SBcontainer
+    display: flex
+    color: #141414
+    align-items: center
+    margin-left: 0
     height: 100%
     width: 15%
-    display: flex
-    justify-content: flex-start
-    align-items: center
 
-.navIcon
+.btnCont
+    left: 0
+    height: 70px
+    width: 75px
+    position: absolute
+
+
+.icon
+    position: relative
     color: white
-    margin-left: 2rem
-    font-size: 2rem
-    height: 80px
-    display: flex
-    justify-content: flex-start
-    align-items: center
+    display: inline
+    margin-left: 24px
+    top: 24px
+    font-size: 1.6rem
+    cursor: pointer
+
+.barNav
+    color: #141414
+    height: 100%
+    width: 25%
+
+.title
+    font-family: Roboto
+    letter-spacing: 3px
+    color: #fff
+
+//headerbar
+.supBar
+    display: inline
+    background-color: #000000
+    border-bottom: none
+    top: 0
+    z-index: 10
+    position: fixed
+    width: calc(100vw)
+    height: 70px
+
+.barsIcon
+    color: white
+    margin-left: 24px
+    width: 25px
+    height: 25px
+
+.LogoContainer
+    position: relative
+    left: 43%
+    display: inline-block
+    cursor: pointer
+    height: 70px
+    width: 200px
+
+//body of page
+.bigIm
+    width: calc(100vw)
+    height: calc(100vh)
+
+.leImg
+    width: 100%
+    height: 100%

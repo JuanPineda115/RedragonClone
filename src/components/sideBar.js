@@ -1,30 +1,29 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom'
+import Dropdown from 'react-dropdown'
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
+import * as AiIcons from 'react-icons/bs';
+
+
 
 class SideBar extends React.Component {
-    constructor(props, context) {
-        super(props, context);
-        this.setState(prevState => ({
-            check: !prevState.check
-        }));
-    };
+    constructor(props) {
+        super(props);
+        this.state = { visible: true };
+    }
     render() {
         return (
-            <div className="wrapper">
-                <div className="Nav">
-                    <li className="navIcon">
-                        <FaIcons.FaBars onClick={showSidebar()} />
+            <div className="SBcontainer">
+                <div className="btnCont">
+                    <li className="icon">
+                        <AiIcons.BsX />
                     </li>
                 </div>
-                <nav className='barNav'>
-                    <div className='sideWrap'>
-                        <li className="navIcon">
-                            <AiIcons.AiOutlineClose onClick={showSidebar()} />
-                        </li>
+                <nav className="barNav">
+                    <div className="title">
+                        <h1>MENU</h1>
                     </div>
-                </nav>
+                </nav>    
             </div>
         )
     }
