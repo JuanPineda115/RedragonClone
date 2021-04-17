@@ -1,32 +1,45 @@
-import React, { useState }  from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom'
 import Dropdown from 'react-dropdown'
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/bs';
-
-const { useState } = React;
-const[status, setStatus] = useState(0);
 
 class SideBar extends React.Component {
     constructor(props) {
         super(props);
         this.state = { visible: true };
     }
+
+    toggleVisible() {
+        if (this.state.visible = true) {
+            this.setState = ({
+                visible: false
+            });
+        }
+        else {
+            this.setState = ({
+                visible: true
+            })
+        }
+    }
+
     render() {
-        return (
-            <div className="SBcontainer">
-                <div className="btnCont">
-                    <li className="icon">
-                        <AiIcons.BsX />
-                    </li>
-                </div>
-                <nav className="barNav">
-                    <div className="title">
-                        <h1>MENU</h1>
+        if(this.state.visible){
+            return (
+                <div className="SBcontainer">
+                    <div className="btnCont">
+                        <li className="icon">
+                            <AiIcons.BsX />
+                        </li>
                     </div>
-                </nav>    
-            </div>
-        )
+                    <nav className="barNav">
+                        <div className="title">
+                            <h1>MENU</h1>
+                        </div>
+                    </nav>
+                </div>
+            )
+        }
     }
 }
 
