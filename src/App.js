@@ -11,6 +11,8 @@ import IoIcons from 'react-icons/io'
 ReactDOM.render(
     <>
         <Header></Header>
-        <SideBar></SideBar>
+        <BigIm></BigIm>
+        <ProdTitle></ProdTitle>
+        <Products></Products>
     </>
     , document.getElementById("root"));

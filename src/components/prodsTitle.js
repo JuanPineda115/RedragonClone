@@ -11,7 +11,7 @@ class ProdTitle extends React.Component{
                     <h2>NUESTROS PRODUCTOS</h2>
                     <div className="separator">
                         <div className="sep"></div>
-                        <h4>DESTACADOS</h4>
+                        <h4 className='dest'>DESTACADOS</h4>
                         <div className="sep"></div>
                     </div>
                 </div>
