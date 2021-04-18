@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class ProdTitle extends React.Component{
     constructor(props){

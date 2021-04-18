@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom'
-import Dropdown from 'react-dropdown'
-import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/bs';
 import { SidebarData } from './sidebarData';
 
@@ -12,7 +9,7 @@ class SideBar extends React.Component {
     }
 
     toggleVisible() {
-        if (this.state.visible = true) {
+        if (this.state.visible) {
             this.setState = ({
                 visible: false
             });
@@ -22,23 +19,26 @@ class SideBar extends React.Component {
                 visible: true
             })
         }
+
     }
 
     render() {
             return (
                 <div className="Sidebar">
                     <div className="btnCont">
-                        <li className="icon"><AiIcons.BsX onClick={this.toggleVisible}/></li>
+                        <li className="icon"><AiIcons.BsX onClick={this.toggleVisible()}/></li>
                     </div>
                     <div className="title">
                             <h3>MENU</h3>
                     </div>
                     <div className="sbContent">
-                        <ul className="sideContent">
+                        <ul className="sbUL">
                             {SidebarData.map((val,key)=>{
-                                <li>
+                                return(
+                                <li key={key} className="row" onClick={window.location.href = '#'}>
                                     <h5>{val.title}</h5>
                                 </li>
+                                )
                             })}
                         </ul>
                     </div>

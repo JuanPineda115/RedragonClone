@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
 import * as FaIcons from 'react-icons/fa';
 
 class Header extends React.Component{
