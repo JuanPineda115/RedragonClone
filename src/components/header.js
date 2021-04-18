@@ -8,14 +8,14 @@ class Header extends React.Component{
 
     toggleMenu() {
         try{
-            if(document.getElementById("side-menu").style.width === "300" || document.getElementById("side-menu").style.width === "300px"){
-                document.getElementById("side-menu").style.width = '0px';
+            if(document.getElementById("side-menu").style.left === "0px"){
+                document.getElementById("side-menu").style.left = '-300px';
                 document.getElementById("page-content").style.opacity  ='100%';
                 document.getElementById("page-content").style.marginLeft = '0px';
             }
             else{
                 document.getElementById("page-content").style.opacity  ='25%';
-                document.getElementById("side-menu").style.width = '300px';
+                document.getElementById("side-menu").style.left = '0px';
                 document.getElementById("page-content").style.marginLeft = '300px';
             }
         }

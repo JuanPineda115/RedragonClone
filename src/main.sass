@@ -11,7 +11,6 @@ body
     font-size: 15px
     overflow-y: scroll
     overflow-x: hidden
-    transition: all 0.5s ease
 
 #root
     width: 100vw
@@ -22,14 +21,16 @@ body
     display:flex
     background: #000
     opacity: 100%
-
+    transition: 500ms linear
 //sidebar
+
 .Sidebar
     position: fixed
+    transition: 500ms linear
     background-color: #141414
-    margin-left: 0
+    left: -300px
     height: 100%
-    width: 0px
+    width: 300px
     z-index: 100
     overflow-y: scroll
 

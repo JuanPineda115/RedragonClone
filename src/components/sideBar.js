@@ -9,7 +9,7 @@ class SideBar extends React.Component {
     }
 
     ToggleMenu(){
-        document.getElementById("side-menu").style.width = '0';
+        document.getElementById("side-menu").style.left = '-300px';
         document.getElementById("page-content").style.marginLeft = '0';
         document.getElementById("page-content").style.opacity  ='100%';
     }
