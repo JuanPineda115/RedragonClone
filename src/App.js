@@ -10,10 +10,7 @@ import IoIcons from 'react-icons/io'
 //IoNotificationsCircleSharp
 ReactDOM.render(
     <>
-        <SideBar></SideBar>
         <Header></Header>
-        <BigIm></BigIm>
-        <ProdTitle></ProdTitle>
-        <Products></Products>
+        <SideBar></SideBar>
     </>
     , document.getElementById("root"));

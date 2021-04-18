@@ -13,19 +13,19 @@ body
     overflow-x: hidden
 
 #root
-    width: calc(100vw)
+    width: 100vw
+    height: 100vh
     line-height: 25px
 
 //sidebar
-.SBcontainer
+.Sidebar
     position: fixed
-    color: #141414
-    align-items: center
+    background-color: #141414
     margin-left: 0
     height: 100%
     width: 300px
-    z-index: 10000
-    transition: all .5s cubic-bezier(.645,.045,.355,1)
+    z-index: 100
+    overflow-y: scroll
 
 .btnCont
     left: 0
@@ -42,13 +42,41 @@ body
     font-size: 1.6rem
     cursor: pointer
 
-.barNav
-    color: #141414
-    width: 25%
-
 .title
+    padding: 43% 3% 0% 6%
+    position: relative
+
+h3
+    margin-left: 20px
+    margin-bottom: 35px
     letter-spacing: 3px
     color: #fff
+    font-weight: 700
+
+.sbContent
+    display: flex
+    align-content: center
+
+.sbFooter
+    background: #000
+    border-top: 1px solid #2b2b2b
+    height: 80px
+    position: fixed
+    width: 300px
+    left: 0
+    bottom: 0
+
+.searchInput
+    background: #000
+    font: inherit
+    color: #666666
+    width: 200px
+    margin-left: 20px
+    position: relative
+    border: none
+    border-bottom: 1px solid #2c2c2c
+    top: 27px
+    padding-bottom: 4px
 
 //headerbar
 .supBar
@@ -143,4 +171,4 @@ h4
     right: 10px
     bottom: 0px
 
-.chaTop
+
