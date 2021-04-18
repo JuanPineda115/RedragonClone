@@ -10,10 +10,12 @@ class Header extends React.Component{
         try{
             if(document.getElementById("side-menu").style.left === "0px"){
                 document.getElementById("side-menu").style.left = '-300px';
+                document.getElementById("page-content").style.background  ='inherit';
                 document.getElementById("page-content").style.opacity  ='100%';
                 document.getElementById("page-content").style.marginLeft = '0px';
             }
             else{
+                document.getElementById("page-content").style.background  ='#0000';
                 document.getElementById("page-content").style.opacity  ='25%';
                 document.getElementById("side-menu").style.left = '0px';
                 document.getElementById("page-content").style.marginLeft = '300px';

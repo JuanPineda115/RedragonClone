@@ -17,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(js|jsx)$/i,
         loader: "babel-loader",
         exclude: /(node_modules)/,
       },
@@ -39,6 +39,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
+              path: path.resolve(__dirname, "dist")
             }
           },
         ],
