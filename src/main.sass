@@ -11,11 +11,17 @@ body
     font-size: 15px
     overflow-y: scroll
     overflow-x: hidden
+    transition: all 0.5s ease
 
 #root
     width: 100vw
     height: 100vh
     line-height: 25px
+
+#page-content
+    display:flex
+    background: #000
+    opacity: 100%
 
 //sidebar
 .Sidebar
@@ -23,7 +29,7 @@ body
     background-color: #141414
     margin-left: 0
     height: 100%
-    width: 300px
+    width: 0px
     z-index: 100
     overflow-y: scroll
 
@@ -36,6 +42,8 @@ body
 .icon
     position: relative
     color: white
+    background-color: transparent
+    border-color: transparent
     display: inline
     margin-left: 24px
     top: 24px
@@ -43,7 +51,7 @@ body
     cursor: pointer
 
 .title
-    padding: 40% 3% 0% 10%
+    padding: 31% 3% 0% 10%
     position: relative
 
 h3
@@ -57,11 +65,13 @@ h3
     color: #999
     position: relative
     left: 15px
+    top: 10px
 
 .sbUL
     font-family: montserrat
     list-style-type: none
     letter-spacing: 1.2px
+    line-height: 5px
 
 .row
     cursor: pointer
@@ -74,8 +84,8 @@ h3
     background: #000
     border-top: 1px solid #2b2b2b
     height: 80px
+    width: inherit
     position: fixed
-    width: 300px
     left: 0
     bottom: 0
 
@@ -83,7 +93,7 @@ h3
     background: #000
     font: inherit
     color: #666666
-    width: 200px
+    width: 65%
     margin-left: 20px
     position: relative
     border: none
@@ -174,6 +184,7 @@ h2
     display: grid
     grid-template-columns: calc(33vw) calc(33vw) calc(33vw)
     list-style-type: none
+    padding: 0px
 
 .newProd
     padding: 2em

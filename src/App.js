@@ -9,10 +9,15 @@ import Products from './components/Products'
 import IoIcons from 'react-icons/io'
 //IoNotificationsCircleSharp
 ReactDOM.render(
-    <>
-        <Header></Header>
-        <BigIm></BigIm>
-        <ProdTitle></ProdTitle>
-        <Products></Products>
-    </>
+    <div className="page-container">
+        <div className="navbar">
+            <SideBar></SideBar>
+        </div>
+        <div id="page-content">
+            <Header></Header>
+            <BigIm></BigIm>
+            <ProdTitle></ProdTitle>
+            <Products></Products>
+        </div>
+    </div>
     , document.getElementById("root"));

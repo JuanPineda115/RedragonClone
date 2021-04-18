@@ -8,26 +8,16 @@ class SideBar extends React.Component {
         this.state = { visible: true };
     }
 
-    toggleVisible() {
-        if (this.state.visible) {
-            this.setState = ({
-                visible: false
-            });
-        }
-        else {
-            this.setState = ({
-                visible: true
-            })
-        }
-
+    ToggleMenu(){
+        document.getElementById("side-menu").style.width = '0';
+        document.getElementById("page-content").style.marginLeft = '0';
+        document.getElementById("page-content").style.opacity  ='100%';
     }
 
     render() {
             return (
-                <div className="Sidebar">
-                    <div className="btnCont">
-                        <li className="icon"><AiIcons.BsX onClick={this.toggleVisible()}/></li>
-                    </div>
+                <div id="side-menu" className="Sidebar">
+                    <button className="icon" onClick={this.ToggleMenu}><AiIcons.BsX /></button>
                     <div className="title">
                             <h3>MENU</h3>
                     </div>
