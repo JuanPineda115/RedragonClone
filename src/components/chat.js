@@ -7,12 +7,12 @@ class Chat extends React.Component {
     }
     Open() {
         var container = document.getElementById("chat-container");
-        if (container.style.bottom = "-400px") {
-            container.style.bottom = "0px";
-            container.style.width = "350px";
-            document.getElementById("status").style.top = "25px";
-            document.getElementById("redPart").style.border = "1px solid white";
-            document.getElementById("cloeChatIcon").style.opacity = "100%";
+        if (container.style.bottom = '-400px') {
+            container.style.bottom = '0px';
+            container.style.width = '350px';
+            document.getElementById("status").style.top = '25px';
+            document.getElementById("redPart").style.border = '1px solid white';
+            document.getElementById("cloeChatIcon").style.opacity = '100%';
         }
         else if (container.style.bottom = "0px") {
             container.style.bottom = "-400px";
