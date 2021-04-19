@@ -9,9 +9,10 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
-  plugins: [new MiniCssExtractPlugin(), new HtmlWebpackPlugin({
-    template: "./src/index.html",
-    filename: "index.html"
+  plugins: [new MiniCssExtractPlugin(), 
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      filename: "index.html"
     }),
   ],
   module: {

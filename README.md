@@ -3,6 +3,7 @@
 Unica pagina web (no lleva a ninguna otra direccion) utilizando react y webpack para medir mis conocimientos adquiridos durante el curso.
 
 Se implemento:
+eslint
 Webpack
 React
 Babel
