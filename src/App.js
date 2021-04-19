@@ -6,6 +6,7 @@ import Header from './components/header'
 import BigIm from './components/bigImage';
 import ProdTitle from './components/prodsTitle';
 import Products from './components/Products';
+import Chat from './components/chat'
 import * as IoIcons from 'react-icons/io';
 
 ReactDOM.render(
@@ -25,5 +26,6 @@ ReactDOM.render(
                 <h4>Bloqueaste nuestras notificaciones.</h4>
             </div>
         </button>
+        <Chat></Chat>
     </div>
     , document.getElementById("root"));
