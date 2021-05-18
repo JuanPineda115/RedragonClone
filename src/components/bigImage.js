@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
+import imagen from '../assets/bigIm.jpg';
 
 class BigIm extends React.Component{
     constructor(props){
@@ -8,7 +9,7 @@ class BigIm extends React.Component{
     render(){
         return(
             <div className="bigIm">
-                <img className="leImg" src="../src/assets/bigIm.jpg"></img>
+                <img className="leImg" src={imagen}></img>
             </div>
         )
     }

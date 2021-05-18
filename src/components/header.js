@@ -1,5 +1,6 @@
 import React from 'react';
 import * as FaIcons from 'react-icons/fa';
+import logaso from '../assets/mainLogo.png';
 
 class Header extends React.Component{
     constructor(props){
@@ -35,7 +36,7 @@ class Header extends React.Component{
                     </button>
                 </div>
                 <div className="LogoContainer">
-                    <img className="mainLogo" src="../src/assets/mainLogo.png"></img>
+                    <img className="mainLogo" src={logaso}></img>
                 </div>
             </header>
         )
